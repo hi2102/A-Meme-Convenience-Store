@@ -34,7 +34,7 @@ export default function AllMeetsUp({ title }) {
   }
   return (
     <section>
-      <h1>This is {title} Page</h1>
+      <h2>아따, 요 짤좀 보이소!!</h2>
       <MeetupList meetups={loadedMeetups} />
     </section>
   );

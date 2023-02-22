@@ -30,19 +30,15 @@ export default function NewMeetUpForm({ onAddMeetup }) {
     <Card>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.control}>
-          <label htmlFor='title'>MeetUp Title</label>
+          <label htmlFor='title'>짤 이름</label>
           <input type='text' id='title' ref={titleInputRef} required />
         </div>
         <div className={styles.control}>
-          <label htmlFor='Image'>MeetUp Image</label>
-          <input type='url' id='Image' ref={imageInputRef} required />
-        </div>
-        <div className={styles.control}>
-          <label htmlFor='Address'>Address</label>
+          <label htmlFor='Address'>좋은 이유</label>
           <input type='text' id='Address' ref={addressInputRef} required />
         </div>
         <div className={styles.control}>
-          <label htmlFor='description'>Description</label>
+          <label htmlFor='description'>내 짤 설명</label>
           <input
             type='text'
             id='description'
@@ -50,8 +46,12 @@ export default function NewMeetUpForm({ onAddMeetup }) {
             required
           />
         </div>
+        <div className={styles.control}>
+          <label htmlFor='Image'>짤줍한 곳(url)</label>
+          <input type='url' id='Image' ref={imageInputRef} required />
+        </div>
         <div className={styles.actions}>
-          <button>Add Meet Up</button>
+          <button>짤 올리기</button>
         </div>
       </form>
     </Card>

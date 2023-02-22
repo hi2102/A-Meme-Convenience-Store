@@ -7,18 +7,26 @@ export default function MainNavigation() {
   const favoritesCtx = useContext(FavoritesContext);
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>React MeetUps</div>
+      <div className={styles.logo}>
+        <div>
+          <div>A Meme</div>
+          <div>Convenience Store</div>
+        </div>
+      </div>
       <nav>
         <ul>
           <li>
-            <Link to='/'>All Meet ups</Link>
+            <Link to='/'>내가 주운 짤들</Link>
           </li>
           <li>
-            <Link to='/new-meetup'>New Meet Up</Link>
+            <Link to='/new-meetup'>뉴 짤 등록</Link>
           </li>
           <li>
             <Link to='/favorites'>
-              Favorites
+              <span>좋짤</span>
+              <span role='img' aria-label='like'>
+                👍
+              </span>
               <span className={styles.badge}>
                 {favoritesCtx.totalFavorites}
               </span>

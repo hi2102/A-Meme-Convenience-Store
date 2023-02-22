@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import NewMeetUpForm from '../components/meetups/NewMeetUpForm';
+import styles from '../components/meetups/NewMeetUpsForm.module.css';
 
 export default function NewMeetUpPage({ title }) {
   const navigate = useNavigate();
@@ -22,10 +23,10 @@ export default function NewMeetUpPage({ title }) {
   };
   return (
     <section>
-      <h1>This is {title} Page</h1>
+      <h1>새로운 나만의 만물을 등록하세요!</h1>
       <NewMeetUpForm onAddMeetup={handleAddMeetup} />
-      <Link to='/'>
-        <button>go to Home</button>
+      <Link to='/' className={styles.actions}>
+        <button>메인 화면으로</button>
       </Link>
     </section>
   );

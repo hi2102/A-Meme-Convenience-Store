@@ -36,7 +36,7 @@ export default function MeetupItem(props) {
         <div className={styles.actions}>
           <Link to='/favorites'>
             <button onClick={handleToggleFavoriteStatus}>
-              {itemIsFavorite ? 'Remove From Favorites' : 'To Favorites'}
+              {itemIsFavorite ? '좋아요에서 지우기' : '좋아요 누르기'}
             </button>
           </Link>
         </div>
