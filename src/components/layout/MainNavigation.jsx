@@ -16,10 +16,10 @@ export default function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link to='/'>내가 주운 짤들</Link>
+            <Link to='/'>줍줍</Link>
           </li>
           <li>
-            <Link to='/new-meetup'>뉴 짤 등록</Link>
+            <Link to='/new-meetup'>짤업</Link>
           </li>
           <li>
             <Link to='/favorites'>
