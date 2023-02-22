@@ -1,1 +1,2 @@
-# this is study repo
+# 세상에서 내가 제일 좋아하는 것들 :: 만물상
+### react로 만든 잡다구리 수집 App
